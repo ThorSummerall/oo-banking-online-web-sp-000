@@ -21,6 +21,15 @@ class BankAccount
   end
 
   def close_account
+<<<<<<< HEAD
     @status = "closed"
+=======
+    if @status == "open"
+      @status = "closed"
+      puts "Your account has been closed."
+    else
+      puts "Your account is already closed!"
+    end
+>>>>>>> 932ee4af157c07ebb260610ca36dc68b27c0dc7e
   end
 end
